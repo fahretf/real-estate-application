@@ -1,0 +1,14 @@
+li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #ff9900
+}
