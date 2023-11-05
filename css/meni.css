@@ -12,3 +12,7 @@ a {
 a:hover {
     color: #ff9900
 }
+
+body {
+    margin-left: 525px;
+}

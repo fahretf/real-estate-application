@@ -1,0 +1,23 @@
+body {
+    background-color: #fdf1d3 ;
+}
+
+img {
+    height: 300px;
+}
+.inner-div {
+
+    width: 700px;   
+    display: inline-block;
+}
+
+
+.profile-photo {
+    display: block;
+}
+
+p {
+    margin-right: 175px;
+    display: inline-block;
+}
+
