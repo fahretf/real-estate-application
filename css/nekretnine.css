@@ -1,12 +1,14 @@
 p {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 body {
     background-color: #fdf1d3 ;
     height: 3000px;
-    padding-top: 70px;
+    padding-top: 200px;
 }
 
 .iframe-menu {
@@ -25,8 +27,6 @@ body {
 
 #stan {
     display: grid;
-    margin-bottom: 40px;
-  /*  grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 20px;
     row-gap: 20px;
@@ -35,7 +35,6 @@ body {
 
 #kuca {
     display: grid;
-    margin-bottom: 40px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 20px;
     row-gap: 20px;
@@ -44,7 +43,6 @@ body {
 
 #pp {
     display: grid;
-    margin-bottom: 40px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 20px;
     row-gap: 20px;
@@ -56,7 +54,18 @@ body {
 
 .element {
     width: 300px;
+}
+
+.kuca {
+    background-color: powderblue;
+}
+
+.stan {
     background-color: white;
+}
+
+.poslovni {
+    background-color: green;
 }
 
 
@@ -64,6 +73,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .button-div {
@@ -73,4 +84,38 @@ body {
 
 }
 
+.grid-header {
+    padding-left: 20px;
+    height: 50px;
+    background: rgba(218, 185, 102, 0.3);
+}
 
+.grid-object-type {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(104, 98, 98);
+    background-color: #fdf1d3;
+    display: inline-block;
+    margin-top: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #fdf1d3;
+}
+
+.wrapper {
+    margin-bottom: 90px;
+}
+
+.details-button {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 3px; 
+    color: white;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(168, 164, 164, 0.55);
+    margin-bottom: 4px;
+}
+
+.details-button:hover {
+    cursor: pointer;
+}
