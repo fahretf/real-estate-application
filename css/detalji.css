@@ -1,3 +1,33 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
 body {
     background-color: #fdf1d3 ;
+    padding-top: 200px;
+}
+
+
+.iframe-menu {
+    background-color: #d7cbad;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    height: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 167, 167, 0.3);
+    border-bottom-width: 1px;
+    z-index: 100;
+} 
+
+.preview {
+ margin-left: 400px;
+}
+
+.naslov {
+    padding-left: 5px;
 }
