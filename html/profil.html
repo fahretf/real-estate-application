@@ -4,38 +4,52 @@
 
 <head>
     <link rel="stylesheet" href="../css/profil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <iframe src="../html/meni.html" frameborder="0" scrolling="no" width="100%"></iframe>
+    <div class="iframe-menu">
+        <iframe src="../html/meni.html" frameborder="0" scrolling="no" width="100%"></iframe>
+    </div>
+    
     <img class="profile-photo" src="https://upload.wikimedia.org/wikipedia/en/3/34/Jimmy_McGill_BCS_S3.png">
 
 
-    <div class="inner-div">
-        <p>Ime</p>
-        <input type="text" name="ime">
-    </div>
+    <div class="container">
 
-    <div class="inner-div">
-        <p>Prezime</p>
-        <input type="text" name="prezime">
-    </div>
+        
 
-    <div class="inner-div">
-        <p>Username</p>
-        <input type="text" name="username">
-    </div>
+        <div class="row">
 
-    <div class="inner-div">
-        <p>Password</p>
-        <input type="text" name="password">
-    </div>
+            <div><p>Ime</p></div>
+            <div><input class="input" type="text"></div>
+        </div>
 
+
+        <div class="row">
+            <div><p>Prezime</p></div>
+            <div><input class="input" type="text"></div>
+
+        </div>
+
+        <div class="row">
+
+            <div><p>Username</p></div>
+            <div><input class="input" type="text"></div>
+        </div>
+
+
+        <div class="row">
+            <div><p>Password</p></div>
+            <div><input class="input" type="text"></div>
+
+        </div>
+
+    </div>
+    
 </body>
-
-
-
-
-
 </html>

@@ -21,11 +21,8 @@ a:hover {
 }
 
 
-body {
 
-   /* margin-left: 525px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
 }

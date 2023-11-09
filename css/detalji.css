@@ -1,8 +1,15 @@
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 35px;
+    margin-left: 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    color: rgb(93, 88, 88);
+
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
 }
 
 body {
@@ -24,10 +31,51 @@ body {
     z-index: 100;
 } 
 
-.preview {
- margin-left: 400px;
-}
+
 
 .naslov {
     padding-left: 5px;
+}
+
+#osnovno {
+    margin-left: 40px;
+    
+}
+
+#detalji {
+    margin-left: 40px;
+    width: 700px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+
+.opis {
+   word-break: break-all;
+}
+
+#upiti {
+    margin-left: 40px;
+    width: 700px;
+}
+
+.upit {
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.query {
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+
+.lista-query {
+    list-style-type: none;
 }
