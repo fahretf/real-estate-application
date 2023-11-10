@@ -1,9 +1,7 @@
 p {
     margin-bottom: 35px;
     margin-left: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: rgb(93, 88, 88);
+
 
 }
 
@@ -12,24 +10,10 @@ h3 {
     font-size: 30px;
 }
 
-body {
-    background-color: #fdf1d3 ;
-    padding-top: 200px;
-}
 
 
-.iframe-menu {
-    background-color: #d7cbad;
-    position: fixed;
-    top: 0;
-    left: 0; 
-    right: 0;
-    height: 40px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 167, 167, 0.3);
-    border-bottom-width: 1px;
-    z-index: 100;
-} 
+
+
 
 
 
@@ -61,16 +45,6 @@ body {
     width: 700px;
 }
 
-.upit {
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    margin-left: 0;
-}
-
 .query {
     margin-bottom: 0;
     word-break: break-all;
@@ -80,4 +54,13 @@ body {
 .lista-query {
     list-style-type: none;
     padding-left: 0;
+}
+
+
+li {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 20px;
 }
