@@ -1,0 +1,3 @@
+U okviru ove modifikacije za ovu spiralu glavna izmjena se tice dodavanja dijela @media u profil.css kada je u pitanju slika profila. 
+Ovaj dio koda se aktivira kada sirina prozora dostigne min. 500px, i u tom slucaju se display property slike postavlja na inline-block, sto znaci
+da ce se nalaziti u istom redu kao i div container.
