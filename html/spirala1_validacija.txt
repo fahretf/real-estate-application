@@ -1,0 +1,17 @@
+Prije isteka roka za slanje spirale 1, uradio sam validaciju HTML koda koristeci validator na sljedecem linku:
+
+https://validator.w3.org/nu/#file. Kao sto se moze vidjeti u historiji rada na projektu, vecina gresaka je bila iz razloga sto sam ugnijezdio element tipa 
+button u element tipa <a></a> pa sam to ispravio.
+
+Medjutim, prilikom rada na dodatnom zadatku (koji je postavljen 11.11.2023.), naisao sam na jos jedan problem koji je zahtijevao validaciju, sa sljedecom greskom:
+
+
+Attribute name not allowed on element meta at this point. head>↩    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+Iz tog razloga sam u fajlu profil.html razdvojio meta tag u dva meta taga, cime su popravljene sve greske.
+
+
+
+CSS validaciju sam izvrsio koristeci validator na sljedecem linku: https://jigsaw.w3.org/css-validator/validator
+
+Nije prijavljena niti jedna greska.
