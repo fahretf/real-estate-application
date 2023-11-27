@@ -37,14 +37,17 @@ p {
 
 .kuca {
     background-color: powderblue;
+    margin-bottom: 80px;
 }
 
 .stan {
     background-color: white;
+    margin-bottom: 80px;
 }
 
 .poslovni {
     background-color: green;
+    margin-bottom: 80px;
 }
 
 
@@ -80,9 +83,6 @@ p {
     box-shadow: 0 0 1px 1px #fdf1d3;
 }
 
-.wrapper {
-    margin-bottom: 90px;
-}
 
 .details-button {
     width: 75px;
