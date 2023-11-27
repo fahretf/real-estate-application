@@ -4,11 +4,14 @@ function spojiNekretnine(divReferenca, instancaModula, tip_nekretnine) {
 
 
     divReferenca.innerHTML = '';
-
+    let tip;
+    if(tip_nekretnine == "Stan") tip = "stan";
+    else if(tip_nekretnine == "Kuća") tip = "kuca";
+    else tip = "poslovni";
 
     nekretnineLista.forEach(function (nekretnina) {
         let nekretninaDiv = document.createElement('div');
-            nekretninaDiv.classList.add("element", tip_nekretnine); 
+            nekretninaDiv.classList.add("element", tip); 
 
         nekretninaDiv.innerHTML = `
      
@@ -47,7 +50,7 @@ const divKuca = document.getElementById("kuca");
 const divPp = document.getElementById("pp");
 const listaNekretnina = [{
     id: 1,
-    tip_nekretnine: "stan",
+    tip_nekretnine: "Stan",
     naziv: "Useljiv stan Sarajevo",
     kvadratura: 58,
     cijena: 232000,
@@ -68,7 +71,7 @@ const listaNekretnina = [{
 },
 {
     id: 2,
-    tip_nekretnine: "kuca",
+    tip_nekretnine: "Poslovni prostor",
     naziv: "Mali poslovni prostor",
     kvadratura: 20,
     cijena: 70000,
@@ -87,7 +90,7 @@ const listaNekretnina = [{
 
 {
     id: 3,
-    tip_nekretnine: "stan",
+    tip_nekretnine: "Stan",
     naziv: "Useljiv stan Sarajevo",
     kvadratura: 58,
     cijena: 232000,
@@ -110,7 +113,7 @@ const listaNekretnina = [{
 
 {
     id: 4,
-    tip_nekretnine: "stan",
+    tip_nekretnine: "Stan",
     naziv: "Kuca kucicca",
     kvadratura: 58,
     cijena: 232000,
@@ -151,6 +154,6 @@ const listaKorisnika = [{
 let nekretnine = SpisakNekretnina();
 nekretnine.init(listaNekretnina, listaKorisnika);
 //pozivanje funkcije
-spojiNekretnine(divStan, nekretnine, "stan");
-spojiNekretnine(divKuca, nekretnine, "kuca");
-//spojiNekretnine(divPp, nekretnine, Poslovni prostor");
+spojiNekretnine(divStan, nekretnine, "Stan");
+spojiNekretnine(divKuca, nekretnine, "Kuća");
+spojiNekretnine(divPp, nekretnine, "Poslovni prostor");
