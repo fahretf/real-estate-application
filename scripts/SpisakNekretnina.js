@@ -41,11 +41,11 @@ let SpisakNekretnina = function () {
                       return false;
                     }
                     break;
-                  // Add more cases for additional criteria if needed
+                  
                 }
               }
             }
-            return true; // If all criteria pass, include the element in the filtered array
+            return true; 
           });
        
     }
@@ -111,6 +111,4 @@ spisakNekretninaInstance.init([
       }]}, 
       
 
-
-    // Add more nekretnina objects as needed
 ]);
