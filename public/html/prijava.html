@@ -5,9 +5,31 @@
         <meta charset="UTF-8">
         <title>Prijava</title>
         <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/prijava.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
-
+        <div class="iframe-menu">
+            <iframe src="../html/meni.html" class="iframe"></iframe>
+        </div>
+        <div class="login-div">
+            <form action="your_server_endpoint" method="post">
+                <label for="username">Username:</label>
+                <input class="input" type="text" id="username" name="username" required>
+                
+                <br>
+                
+                <label for="password">Password: </label>
+                <input class="input" type="password" id="password" name="password" required>
+                
+                <br>
+        
+                <input class="login-button" type="submit" value="Login">
+            </form>
+        </div>
     </body>
 </html>

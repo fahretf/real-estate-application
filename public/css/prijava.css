@@ -1,0 +1,24 @@
+.input {
+    height: 35px;
+    border: none;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.02);
+    width: 200px;    
+  }
+
+  .login-button {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-radius: 3px; 
+    color: white;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: rgba(168, 164, 164, 0.55);
+    margin-bottom: 4px;
+}
+
+
+.login-div {
+    display: inline-block;
+    margin: auto;
+    width:200px;
+}
