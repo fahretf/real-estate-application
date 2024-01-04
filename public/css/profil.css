@@ -3,7 +3,7 @@
   width: 200px;
 }
 
-@media screen and (min-width: 500px) and (max-height: 9999px){
+@media screen and (min-width: 500px) and (max-height: 9999px) {
   .profile-photo {
     display: inline-block;
   }
@@ -21,9 +21,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-}  
-
-
+}
 
 .input {
   height: 35px;
@@ -37,6 +35,13 @@ p {
   display: inline-block;
 }
 
-/* .iframe-menu {
-  padding-right: 18px;
-} */
+.send-button {
+  width: 75px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Roboto', 'sans-serif';
+  background-color: rgba(168, 164, 164, 0.55);
+  margin-bottom: 4px;
+}

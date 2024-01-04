@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -20,48 +19,52 @@
         <iframe src="../html/meni.html" class="iframe"></iframe>
     </div>
 
-
     <img class="profile-photo" src="https://upload.wikimedia.org/wikipedia/en/3/34/Jimmy_McGill_BCS_S3.png" alt="Profilna slika.">
 
     <div class="container">
-
-
-
-        <div class="row">
-
-            <div>
-                <p>Ime</p>
+        <form id="updateProfileForm">
+            <div class="row">
+                <div>
+                    <p>Ime</p>
+                </div>
+                <div><input class="input" type="text" id="ime" name="ime"></div>
             </div>
-            <div><input class="input" type="text"></div>
-        </div>
 
-
-        <div class="row">
-            <div>
-                <p>Prezime</p>
+            <div class="row">
+                <div>
+                    <p>Prezime</p>
+                </div>
+                <div><input class="input" type="text" id="prezime" name="prezime"></div>
             </div>
-            <div><input class="input" type="text"></div>
 
-        </div>
-
-        <div class="row">
-
-            <div>
-                <p>Username</p>
+            <div class="row">
+                <div>
+                    <p>Username</p>
+                </div>
+                <div><input class="input" type="text" id="username" name="username"></div>
             </div>
-            <div><input class="input" type="text"></div>
-        </div>
 
-
-        <div class="row">
-            <div>
-                <p>Password</p>
+            <div class="row">
+                <div>
+                    <p>Password</p>
+                </div>
+                <div><input class="input" type="password" id="password" name="password"></div>
             </div>
-            <div><input class="input" type="text"></div>
 
-        </div>
-
+            <div class="row">
+                <div>
+                    <!-- Add any other fields you want to include -->
+                </div>
+                <div>
+                    <button type="submit" class="send-button">Ažuriraj</button>
+                </div>
+            </div>
+        </form>
     </div>
+
+    <script src="../scripts/profil.js"></script> <!-- You can create profil.js to handle form submission -->
+    <script src="../scripts/PoziviAjax.js"></script> <!-- You can create profil.js to handle form submission -->
+
 
 </body>
 

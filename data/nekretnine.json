@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "tip_nekretnine": "Stan",
+    "tip_nekretnine": "apartment",
     "naziv": "Useljiv stan Sarajevo",
     "kvadratura": 58,
     "cijena": 232000,
@@ -27,7 +27,7 @@
   },
   {
     "id": 2,
-    "tip_nekretnine": "Poslovni prostor",
+    "tip_nekretnine": "business",
     "naziv": "Mali poslovni prostor",
     "kvadratura": 20,
     "cijena": 70000,
@@ -40,6 +40,132 @@
       {
         "korisnik_id": 2,
         "tekst_upita": "Integer tincidunt."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tip_nekretnine": "house",
+    "naziv": "Prostrana kuća",
+    "kvadratura": 150,
+    "cijena": 350000,
+    "tip_grijanja": "centralno",
+    "lokacija": "Ilidža",
+    "godina_izgradnje": 2015,
+    "datum_objave": "15.07.2023.",
+    "opis": "Lorem ipsum dolor sit amet.",
+    "upiti": [
+      {
+        "korisnik_id": 3,
+        "tekst_upita": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "tip_nekretnine": "apartment",
+    "naziv": "Moderni stan",
+    "kvadratura": 75,
+    "cijena": 300000,
+    "tip_grijanja": "toplana",
+    "lokacija": "Novi Grad",
+    "godina_izgradnje": 2020,
+    "datum_objave": "10.05.2023.",
+    "opis": "Quisque velit nisi, pretium ut lacinia in.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Morbi accumsan ipsum velit."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "tip_nekretnine": "business",
+    "naziv": "Prostor za kafić",
+    "kvadratura": 80,
+    "cijena": 120000,
+    "tip_grijanja": "klima",
+    "lokacija": "Sarajevo",
+    "godina_izgradnje": 2010,
+    "datum_objave": "05.03.2023.",
+    "opis": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+    "upiti": [
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Nulla quis lorem ut libero malesuada feugiat."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "tip_nekretnine": "house",
+    "naziv": "Porodična kuća s vrtom",
+    "kvadratura": 200,
+    "cijena": 500000,
+    "tip_grijanja": "plin",
+    "lokacija": "Vogošća",
+    "godina_izgradnje": 2012,
+    "datum_objave": "18.11.2023.",
+    "opis": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+    "upiti": [
+      {
+        "korisnik_id": 3,
+        "tekst_upita": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "tip_nekretnine": "apartment",
+    "naziv": "Novi dvosoban stan",
+    "kvadratura": 65,
+    "cijena": 250000,
+    "tip_grijanja": "plin",
+    "lokacija": "Bistrik",
+    "godina_izgradnje": 2018,
+    "datum_objave": "12.02.2023.",
+    "opis": "Aenean commodo ligula eget dolor.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Sociis natoque penatibus et magnis dis parturient montes."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "tip_nekretnine": "business",
+    "naziv": "Moderni uredski prostor",
+    "kvadratura": 40,
+    "cijena": 90000,
+    "tip_grijanja": "struja",
+    "lokacija": "Marijin Dvor",
+    "godina_izgradnje": 2015,
+    "datum_objave": "25.06.2023.",
+    "opis": "Aenean massa.",
+    "upiti": [
+      {
+        "korisnik_id": 3,
+        "tekst_upita": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "tip_nekretnine": "house",
+    "naziv": "Luksuzna vila sa bazenom",
+    "kvadratura": 300,
+    "cijena": 800000,
+    "tip_grijanja": "centralno",
+    "lokacija": "Ilidža",
+    "godina_izgradnje": 2016,
+    "datum_objave": "30.04.2023.",
+    "opis": "Donec quam felis, ultricies nec.",
+    "upiti": [
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       }
     ]
   }

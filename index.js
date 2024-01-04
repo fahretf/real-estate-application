@@ -6,10 +6,9 @@ const path = require('path');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
 
-
+app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname + "/public"));
 const USERS_FILE_PATH = path.join(__dirname, 'data', 'korisnici.json');
 const NEKRETNINE_FILE_PATH = path.join(__dirname, 'data', 'nekretnine.json');
 app.use(session({
@@ -31,7 +30,14 @@ app.get('/detalji.html', function(req, res) {
 
 
 app.get('/profil.html', function(req, res) {
-    res.sendFile(__dirname + '/public/html/profil.html');
+    // Check if user is authenticated
+    if (!req.session.username) {
+        // Unauthorized access
+        res.status(401).send('Unauthorized access');
+    } else {
+        // User is authenticated, send the profil.html file
+        res.sendFile(__dirname + '/public/html/profil.html');
+    }
 });
 
 app.get('/prijava.html', function(req, res) {
