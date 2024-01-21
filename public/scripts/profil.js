@@ -1,7 +1,5 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const updateProfileForm = document.getElementById('updateProfileForm');
-    //zasto ovo nece??
     updateProfileForm.addEventListener('submit', function (event) {
         event.preventDefault();
 

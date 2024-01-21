@@ -1,6 +1,6 @@
 const PoziviAjax = (() => {
     
-    const BASE_URL = 'http://localhost:3000';  
+    const BASE_URL = 'http://localhost:3000'; 
 
     
     const makeRequest = (method, endpoint, data, fnCallback) => {
@@ -11,10 +11,10 @@ const PoziviAjax = (() => {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    // Successful response
+                    
                     fnCallback(null, JSON.parse(xhr.responseText));
                 } else {
-                    // Error response
+                    
                     fnCallback({ error: xhr.statusText, status: xhr.status });
                 }
             }
@@ -23,17 +23,18 @@ const PoziviAjax = (() => {
         xhr.send(JSON.stringify(data));
     };
 
-    // Returns the currently logged in user
+    
     function impl_getKorisnik(fnCallback) {
         makeRequest('GET', '/korisnik', null, fnCallback);
     }
 
-    // Updates the data of the logged in user
+    
     function impl_putKorisnik(noviPodaci, fnCallback) {
         makeRequest('PUT', '/korisnik', noviPodaci, fnCallback);
+        
     }
 
-    // Adds a new upit for the logged in user.
+    
     function impl_postUpit(nekretnina_id, tekst_upita, fnCallback) {
         const data = { nekretnina_id, tekst_upita };
         makeRequest('POST', '/upit', data, fnCallback);
@@ -52,6 +53,18 @@ const PoziviAjax = (() => {
         makeRequest('POST', '/logout', {}, fnCallback);
     }
 
+    function impl_getNekretninaById(nekretnina_id, fnCallback) {
+        makeRequest('GET', `/nekretnina/${nekretnina_id}`, null, fnCallback);
+    }
+
+    function impl_getUpitiForNekretnina(nekretnina_id, fnCallback) {
+        makeRequest('GET', `/upiti/${nekretnina_id}`, null, fnCallback);
+    }
+
+    function impl_getKorisnikNameFromId(korisnik_id, fnCallback) {
+        makeRequest('GET', `/korisnik/${korisnik_id}`, null, fnCallback);
+    }
+
     return {
         postLogin: impl_postLogin,
         postLogout: impl_postLogout,
@@ -59,5 +72,8 @@ const PoziviAjax = (() => {
         putKorisnik: impl_putKorisnik,
         postUpit: impl_postUpit,
         getNekretnine: impl_getNekretnine,
+        getNekretninaById: impl_getNekretninaById,
+        getUpitiForNekretnina: impl_getUpitiForNekretnina,
+        getKorisnikNameFromId: impl_getKorisnikNameFromId,
     };
 })();
