@@ -20,13 +20,13 @@ app.use(session({
 }));
  
 const sequelize = new Sequelize(
-  process.env.MYSQL_DATABASE,
-  process.env.MYSQL_USER,
-  process.env.MYSQL_PASSWORD,
+  "DBWT19",
+  `${process.env.MYSQL_USER}`,
+  `${process.env.MYSQL_PASSWORD}`,
   {
-    host: process.env.MYSQL_DB_HOST, // host: 'localhost'
+    host: `${process.env.MYSQL_DB_HOST}`, // host: 'localhost'
     dialect: 'mysql',
-    port: '8080',
+    port: '3306',
     logging: false 
   }
 );

@@ -1,0 +1,55 @@
+{
+    "containerDefinitions": [
+      {
+        "portMappings": [
+          {
+            "hostPort": 3306,
+            "protocol": "tcp",
+            "containerPort": 3306
+          }
+        ],
+        "cpu": 256,
+        "environment": [
+          {
+            "name": "MYSQL_DATABASE",
+            "value": "DBWT19"
+          },
+          {
+            "name": "MYSQL_USER",
+            "value": "${MYSQL_USER}"
+          },
+          {
+            "name": "MYSQL_PASSWORD",
+            "value": "${MYSQL_PASSWORD}"
+          },
+          {
+            "name": "MYSQL_ROOT_PASSWORD",
+            "value": "${MYSQL_ROOT_PASSWORD}"
+          }
+        ],
+        "memory": 512,
+        "image": "mysql",
+        "healthCheck": {
+          "retries": 10,
+          "command": [
+            "CMD-SHELL",
+            "mysqladmin ping -h localhost --password=${MYSQL_ROOT_PASSWORD}"
+          ],
+          "timeout": 10,
+          "interval": 30,
+          "startPeriod": 5
+        },
+        "name": "database"
+      }
+    ],
+    "placementConstraints": [
+      {
+        "type": "memberOf",
+        "expression": "attribute:ecs.subnet-id in [${PRIVATE_SUBNET_ID}]"
+      }
+    ],
+    "family": "database-task",
+    "taskRoleArn": "${CI_AWS_TASK_EXECUTION_ROLE}",
+    "executionRoleArn": "${CI_AWS_TASK_EXECUTION_ROLE}"
+  }
+  

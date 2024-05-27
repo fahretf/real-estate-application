@@ -1,0 +1,41 @@
+{
+    "containerDefinitions": [
+      {
+        "portMappings": [
+          {
+            "hostPort": 8080,
+            "protocol": "tcp",
+            "containerPort": 8080
+          }
+        ],
+        "cpu": 256,
+        "environment": [
+          {
+            "name": "MYSQL_DB_HOST",
+            "value": "${MYSQL_DB}"
+          },
+          {
+            "name": "MYSQL_USER",
+            "value": "${MYSQL_USER}"
+          },
+          {
+            "name": "MYSQL_PASSWORD",
+            "value": "${MYSQL_PASSWORD}"
+          }
+        ],
+        "memory": 512,
+        "image": "${REPOSITORY_URL}",
+        "name": "frontend-task"
+      }
+    ],
+    "placementConstraints": [
+      {
+        "type": "memberOf",
+        "expression": "attribute:ecs.subnet-id in [${PUBLIC_SUBNET_ID}]"
+      }
+    ],
+    "family": "frontend-task",
+    "taskRoleArn": "${CI_AWS_TASK_EXECUTION_ROLE}",
+    "executionRoleArn": "${CI_AWS_TASK_EXECUTION_ROLE}"
+  }
+  
