@@ -18,13 +18,18 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }));
-
-const sequelize = new Sequelize('wt24', 'root', 'password', {
-    host: 'localhost',
+ 
+const sequelize = new Sequelize(
+  process.env.MYSQL_DATABASE,
+  process.env.MYSQL_USER,
+  process.env.MYSQL_PASSWORD,
+  {
+    host: process.env.MYSQL_DB_HOST, // host: 'localhost'
     dialect: 'mysql',
+    port: '8080',
     logging: false 
-  });
-  
+  }
+);
   
   const Korisnik = sequelize.define('Korisnik', {
       ime: {
@@ -597,7 +602,7 @@ app.get('/korisnik/:id', async (req, res) => {
 
 
 
-const server = app.listen(3000, () => {
+const server = app.listen(8080, () => {
     console.log('Aplikacija pokrenuta.');
 });
 
