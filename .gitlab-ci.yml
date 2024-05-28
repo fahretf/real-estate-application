@@ -36,7 +36,7 @@ build_frontend:
   <<: *build_docker_script
   stage: build
   variables:
-    REPOSITORY_URL: ndzajic1/arm-frontend-2024
+    REPOSITORY_URL: ffijuljani1/arm-projekat
 
 deploy_frontend:
   before_script:
@@ -46,7 +46,7 @@ deploy_frontend:
   <<: *deploy_ecs_script
   stage: deploy
   variables:
-    REPOSITORY_URL: ndzajic1/arm-frontend-2024
+    REPOSITORY_URL: ffijuljani1/arm-projekat
     CI_AWS_ECS_CLUSTER: arm_ecs_cluster
     CI_AWS_SERVICE: frontend-service
     CI_AWS_ECS_TASK_DEFINITION_FILE: frontend-task.json
