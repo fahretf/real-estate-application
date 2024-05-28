@@ -10,5 +10,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD ["wait-for-it", "mysql-db:3306", "--", "node", "index.js"]
+CMD ["wait-for-it", "${process.env.MYSQL_DB_HOST}:3306", "--", "node", "index.js"]
 
