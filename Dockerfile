@@ -9,6 +9,6 @@ RUN npm ci
 
 COPY . .
 
-#CMD ["wait-for-it", "${process.env.MYSQL_DB_HOST}:3306", "--", "node", "index.js"]
-ENTRYPOINT ["node", "index.js"]
+CMD ["wait-for-it", "${process.env.MYSQL_DB_HOST}:3306", "--", "node", "index.js"]
+#ENTRYPOINT ["node", "index.js"]
 
